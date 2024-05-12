@@ -1,21 +1,26 @@
 import { useEffect, useState } from "react"
 
-function FlightsData() {
+function FlightsData({data}:any) {
+    const formData = data;
+
     const [flights, setFlights] = useState([]);
-    useEffect(() => {
-        const url = 'flightData.json';
-        fetch(url).then(res => res.json())
-            .then(data => {
-                setFlights(data.flightOffer)
-            })
-    }, []);
+        useEffect(() => {
+            const url = 'flightData.json';
+            fetch(url).then(res => res.json())
+                .then(data => {
+                        setFlights(data.flightOffer)
+                })
+        }, []);
+ 
     return (
-        <div className="">
-            {
+        <div>
+            { formData &&
+                <div>
+                    {
                 flights && <h1 className="mx-16 lg:font-bold lg:text-xl mt-0 mb-8">Data Parse Successfully</h1>
             }
-            <div className="overflow-x-auto mx-16">
-                <table className="table table-xs">
+            <div className="overflow-x-auto mx-16 ">
+                <table className="table table-xs sm:overflow-x-auto lg:overflow-x-hidden">
                     <thead className="bg-gray-100 ">
                         <tr>
                             <th></th>
@@ -95,6 +100,8 @@ function FlightsData() {
                     </tbody>
                 </table>
             </div>
+                </div>
+            }
         </div>
     )
 }
