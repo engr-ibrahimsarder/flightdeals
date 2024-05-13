@@ -21,5 +21,5 @@
 
 - project live [open](https://bdfashonova.firebaseapp.com/)
 - project github [open](https://github.com/ibrahimsarder96/fashionova-client-side/)
-- project live [open](https://bdfashonova.firebaseapp.com/)
+- project live [open](https://weatherea.netlify.app/)
 - project github [open](https://github.com/ibrahimsarder96/weather-app)
