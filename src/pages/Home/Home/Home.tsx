@@ -7,7 +7,6 @@ function Home() {
     <div>
       <Header></Header>
       <Form></Form>
-      {/* <FlightsData></FlightsData> */}
     </div>
   )
 }
