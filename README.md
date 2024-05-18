@@ -7,9 +7,9 @@
 # Given below the instruction how to open this project:
 
 * clone or download this project
-* cmd open and project root path
+* cmd open and project root path and npm install
 * open this project code
-* cmd command npm run dev 
+* cmd command npm run dev
 * open localhost this project
 
 ## Project livesite link 
