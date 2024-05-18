@@ -8,7 +8,7 @@
 
 * clone or download this project
 * cmd open and project root path and npm install
-* open this project code
+* open this project cmd command code .
 * cmd command npm run dev
 * open localhost this project
 
